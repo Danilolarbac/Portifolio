@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+* {
+    margin: 0;
+}
+
+.hero-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* background-image: url('https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/hubble-17-sombrero-galaxy-1920.webp?w=1190&h=667'); */
+    background-image: url('https://www.showmetech.com.br/wp-content/uploads//2022/04/papel-de-parede-animado-no-pc-showmetech-2-2-1920x1024.png');
+    background-attachment: fixed;
+    /*essa quatro linhas abaixo efeito paralax */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10px;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    font-size: 60px;
+}
+
+nav {
+    width: 50%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 700px;
+}
+
+li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 21px;
+    color: #fff;
+    cursor: pointer;
+}
+
+li:hover {
+    color: #d870db;
+}
+
+.arrows {
+    width: 60px;
+    height: 172px;
+    bottom: 20px;
+}
+
+.arrows path {
+    stroke: #fff;
+    fill: transparent;
+    stroke-width: 1px;
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes arrow {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.arrows path.a1 {
+    animation-delay: -1s;
+    -webkit-animation-delay: -1s;
+}
+
+.arrows path.a2 {
+    animation-delay: -0.5s;
+    -webkit-animation-delay: -0.5s;
+}
+
+.arrows path.a3 {
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+}
+
+.content-container {
+    height: 100vh;
+    background-color: #333;
+}
+
+.profile-container {
+    color: #333;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./image/sergey-zolkin-_UeY8aTI6d0-unsplash.jpg');
+    background-attachment: fixed;
+    /*essa quatro linhas abaixo efeito paralax */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile-content {
+    width: 50%;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.profile-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid #d870db;
+}
+
+.name-text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 21px;
+    margin-top: 15px;
+}
+
+.profile-text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    text-align: center;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.profile-button {
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    background-color: #d870db;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 35px;
+    cursor: pointer;
+}
+
+.divider {
+    width: 100%;
+    border-top: .5px solid #bfbfbf;
+    margin: 20px 0;
+}
+
+.icons-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.icon-item {
+    width: 80px;
+    height: auto;
+}
+
+.profile-sinopse {
+    width: 430px;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    font-size: 17px;
+    text-align: justify;
+}
+
+
+
+
+.project-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./image/imgTerceiraParteFundo.jpg);
+    background-attachment: fixed;
+    /*essa quatro linhas abaixo efeito paralax */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-content {
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-rows: repeat(1fr, 3);
+    row-gap: 40px;
+}
+
+.position-container {
+    width: 100%;
+    display: flex;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+.left {
+    justify-content: flex-start;
+}
+
+.project-card {
+    width: 700px;
+    height: 150px;
+    background-color: #000;
+    box-shadow: 10px 10px 5px black;
+    /*Faz uma sombra em nossa caixinha*/
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.card-reverse {
+    flex-direction: row-reverse;
+}
+
+.project-image {
+    width: 300px;
+    height: auto;
+    position: relative;
+    border-radius: 8px;
+    right: 20px;
+    top: 40px;
+}
+
+.image-reverse {
+    left: 20px;
+}
+
+.project-text {
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    text-align: justify;
+}
+
+
+/* Editando o fomularios*/
+
+.form-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./image/img_Forms.jpg);
+    background-attachment: fixed;
+    /*essa quatro linhas abaixo efeito paralax */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form {
+    width: 400px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 8px;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: 'Oswald', sans-serif;
+    background: #c0c0c0;
+    box-shadow: -11px 11px 8px #7f7f7f,
+        11px -11px 8px #ffffff;
+}
+
+label {
+    width: 90%;
+    display: block;
+}
+
+input {
+    display: block;
+    width: 100%;
+    height: 20px;
+    border-radius: 8px;
+    font-family: 'Oswald', sans-serif;
+    color: coral;
+}
+
+textarea {
+    display: block;
+    width: 90%;
+    height: 300px;
+    max-width: 360px;
+    min-width: 360px;
+    min-height: 150px;
+    max-height: 150px;
+    border-radius: 8px;
+    font-family: 'Oswald', sans-serif;
+    color: coral;
+    resize: none; /* retira a opção de crecer do textarea*/
+}
+
+button {
+    width: 80%;
+    border-radius: 8px;
+    border: none;
+    transition: 1s;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+
+button:hover {
+    transform: scale(1.14);
+    color: red;
+    font-weight: bold;
+}
+
+#first-label {
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
